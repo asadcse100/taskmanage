@@ -18,5 +18,10 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        \App\Models\Todo::create([
+            'title' => 'title todo',
+            'description' => 'Test description',
+            'is_done' => 0
+        ]);
     }
 }
